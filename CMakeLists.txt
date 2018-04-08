@@ -10,7 +10,7 @@ SET(COVERAGE OFF CACHE BOOL "Coverage")
 
 add_executable(Test_CI_CPP main.cpp Logger.cpp Logger.h)
 
-add_executable(tests Logger.cpp)
+add_executable(tests Logger.cpp tests/logger_tests.cpp)
 target_link_libraries(tests PRIVATE gtest ${CMAKE_THREAD_LIBS_INIT})
 
 

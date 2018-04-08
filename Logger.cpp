@@ -7,5 +7,5 @@
 #include "Logger.h"
 
 void Logger::log(const std::string &msg) {
-    std::clog << msg << std::endl;
+    std::cerr << msg << std::endl;
 }
