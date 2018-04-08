@@ -11,7 +11,7 @@
 class Logger {
 public:
     static void log(const std::string &msg) {
-        std::clog << msg << std::endl;
+        std::cout << msg << std::endl;
     }
 };
 
