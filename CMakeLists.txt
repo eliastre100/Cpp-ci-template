@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9.2)
-project(Test-CI-CPP)
+project(Cpp-ci-template)
 include(gtest.cmake)
 find_package (Threads)
 
@@ -8,9 +8,9 @@ set(CMAKE_CXX_STANDARD 11)
 SET(COVERAGE OFF CACHE BOOL "Coverage")
 
 
-add_executable(Test_CI_CPP main.cpp Logger.cpp Logger.h)
+add_executable(Test_CI_CPP srcs/main.cpp srcs/Logger.cpp srcs/Logger.h)
 
-add_executable(Tests Logger.cpp tests/logger_tests.cpp)
+add_executable(Tests tests/logger_tests.cpp)
 target_link_libraries(Tests PRIVATE gtest ${CMAKE_THREAD_LIBS_INIT})
 
 
