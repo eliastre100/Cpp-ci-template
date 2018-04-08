@@ -1,6 +1,12 @@
 cmake_minimum_required(VERSION 3.9.2)
 project(Test_CI_CPP)
+include(gtest.cmake)
+find_package (Threads)
+
 
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(Test_CI_CPP main.cpp Logger.cpp Logger.h)
+
+add_executable(tests Logger.cpp)
+target_link_libraries(tests gtest ${CMAKE_THREAD_LIBS_INIT})
