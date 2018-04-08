@@ -6,14 +6,11 @@
 #define TEST_CI_CPP_LOGGER_H
 
 
-#include <iostream>
 #include <string>
 
 class Logger {
 public:
-    static void log(const std::string &msg) {
-        std::clog << msg << std::endl;
-    }
+    static void log(const std::string &msg);
 };
 
 

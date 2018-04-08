@@ -9,7 +9,7 @@ before_install:
 script:
   - cmake . -DCOVERAGE=1
   - cmake --build .
-  - ./tests
+  - ./Tests
 
 after_success:
   - coveralls --root . -E ".*gtest.*" -E ".*CMakeFiles.*"
