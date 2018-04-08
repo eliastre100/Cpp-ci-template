@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include "../Logger.h"
+#include "../srcs/Logger.h"
 
 TEST(Logger, log)
 {
