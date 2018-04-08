@@ -11,7 +11,7 @@ SET(COVERAGE OFF CACHE BOOL "Coverage")
 add_executable(Test_CI_CPP main.cpp Logger.cpp Logger.h)
 
 add_executable(tests Logger.cpp)
-target_link_libraries(tests gtest ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(tests PRIVATE gtest ${CMAKE_THREAD_LIBS_INIT})
 if (COVERAGE)
     target_compile_options(tests PRIVATE --coverage)
     target_link_libraries(tests PRIVATE --coverage)
