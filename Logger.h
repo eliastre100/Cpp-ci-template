@@ -7,11 +7,12 @@
 
 
 #include <iostream>
+#include <string>
 
 class Logger {
 public:
     static void log(const std::string &msg) {
-        std::cout << msg << std::endl;
+        std::clog << msg << std::endl;
     }
 };
 
