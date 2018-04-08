@@ -1,0 +1,7 @@
+dist: xenial
+sudo: false
+language: cpp
+
+script:
+  - cmake .
+  - cmake --build .
