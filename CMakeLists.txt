@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9.2)
-project(Test_CI_CPP)
+project(Test-CI-CPP)
 include(gtest.cmake)
 find_package (Threads)
 
